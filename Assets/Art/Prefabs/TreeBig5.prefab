@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2982343778377453243, guid: c2babeacdc91b472da3e686e6f199107, type: 3}
       propertyPath: m_Name
-      value: TreeBig3
+      value: TreeBig5
       objectReference: {fileID: 0}
     - target: {fileID: 4413122585044223658, guid: c2babeacdc91b472da3e686e6f199107, type: 3}
       propertyPath: m_RootOrder
@@ -54,6 +54,18 @@ PrefabInstance:
     - target: {fileID: 4413122585044223658, guid: c2babeacdc91b472da3e686e6f199107, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570729592147154696, guid: c2babeacdc91b472da3e686e6f199107, type: 3}
+      propertyPath: m_Color.b
+      value: 0.28347805
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570729592147154696, guid: c2babeacdc91b472da3e686e6f199107, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5943396
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570729592147154696, guid: c2babeacdc91b472da3e686e6f199107, type: 3}
+      propertyPath: m_Color.r
+      value: 0.23268954
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2babeacdc91b472da3e686e6f199107, type: 3}
