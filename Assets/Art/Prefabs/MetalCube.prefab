@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6844850198121277341}
   - component: {fileID: 3023849309080995765}
-  - component: {fileID: 3834746414339298401}
+  - component: {fileID: 3093066750041794845}
   m_Layer: 0
   m_Name: MetalCube
   m_TagString: Untagged
@@ -83,8 +83,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &3834746414339298401
-PolygonCollider2D:
+--- !u!61 &3093066750041794845
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,7 +96,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.08771014, y: 0.24858749}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.40633076, y: 0.012109074}
@@ -106,18 +106,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.38770667, y: 0.7281331}
-      - {x: 0.35770667, y: 0.7881331}
-      - {x: -0.02229332, y: 0.9281331}
-      - {x: -0.15229331, y: 0.9281331}
-      - {x: -0.47229332, y: 0.75813305}
-      - {x: -0.5322933, y: 0.6781331}
-      - {x: -0.5322933, y: 0.13813312}
-      - {x: -0.4922933, y: 0.10813312}
-      - {x: -0.40229332, y: 0.06813312}
-      - {x: -0.13229331, y: -0.011866874}
-      - {x: 0.05770668, y: -0.011866874}
-      - {x: 0.3677067, y: 0.20813312}
-      - {x: 0.38770667, y: 0.42813313}
+  serializedVersion: 2
+  m_Size: {x: 0.88916636, y: 0.4443946}
+  m_EdgeRadius: 0
