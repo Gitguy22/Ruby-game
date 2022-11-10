@@ -5,7 +5,7 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     public int maxHealth = 5;
-    int currentHealth
+    int currentHealth;
 
     Rigidbody2D rigidbody2d;
     float horizontal; 
