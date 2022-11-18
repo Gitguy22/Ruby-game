@@ -10,7 +10,7 @@ public class CodeChallenge : MonoBehaviour
     private float vertical;
 
     // Create a variable to store the speed of the character
-    public float speed=10;
+    private float speed = 10;
     
     // Start is called before the first frame update
     void Start()

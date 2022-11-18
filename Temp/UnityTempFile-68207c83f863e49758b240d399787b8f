@@ -335,7 +335,8 @@
 /define:UNITY_STANDALONE_OSX
 /define:UNITY_TEAM_LICENSE
 /define:USE_SEARCH_ENGINE_API
+"Assets/Art/Prefabs/HealthCollectible.cs"
 "Assets/CodeChallenge/CodeChallenge.cs"
-"Assets/Scripts/HealthCollectible.cs"
+"Assets/Scripts/DamageZone.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/RubyController.cs"
