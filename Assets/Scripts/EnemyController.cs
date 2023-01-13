@@ -13,6 +13,8 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     bool broken = true;
     
+    public ParticleSystem smokeEffect;
+
     Animator animator;
     
     // Start is called before the first frame update
@@ -83,5 +85,7 @@ public class EnemyController : MonoBehaviour
         rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
+
+        smokeEffect.Stop();
     }
 }
