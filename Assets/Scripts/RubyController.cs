@@ -5,7 +5,7 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
-    
+    // ========== Max Health ==========
     public int maxHealth = 5;
     
     public GameObject projectilePrefab;
@@ -66,6 +66,7 @@ public class RubyController : MonoBehaviour
     
     void FixedUpdate()
     {
+        // ========== Movement ==========
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
@@ -75,6 +76,7 @@ public class RubyController : MonoBehaviour
 
     public void ChangeHealth(int amount)
     {
+        // ========== Health Changes ==========
         if (amount < 0)
         {
             if (isInvincible)
@@ -90,6 +92,7 @@ public class RubyController : MonoBehaviour
     
     void Launch()
     {
+        // ========== Projectile Shooting ==========
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
 
         Projectile projectile = projectileObject.GetComponent<Projectile>();
