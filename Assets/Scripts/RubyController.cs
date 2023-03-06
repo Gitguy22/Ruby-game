@@ -25,6 +25,8 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1,0);
 
     AudioSource audioSource;
+
+    public AudioClip throwSound;
     
     // Start is called before the first frame update
     void Start()
@@ -33,7 +35,7 @@ public class RubyController : MonoBehaviour
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
 
-        audioSource= GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void PlaySound(AudioClip clip)
@@ -120,5 +122,7 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+
+        PlaySound(throwSound);
     }
 }
