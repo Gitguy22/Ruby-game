@@ -39,12 +39,14 @@
      <Compile Include="Assets/Scripts/Projectile.cs" />
      <Compile Include="Assets/Scripts/HealthCollectible.cs" />
      <Compile Include="Assets/Scripts/DamageZone.cs" />
+     <Compile Include="Assets/NonPlayerCharacter.cs" />
      <Compile Include="Assets/Scripts/EnemyController.cs" />
      <Compile Include="Assets/Scripts/RubyController.cs" />
+     <Compile Include="Assets/Scripts/NewBehaviourScript1.cs" />
      <Compile Include="Assets/Scripts/UIHealthBar.cs" />
      <Compile Include="Assets/Scripts/NewBehaviourScript.cs" />
      <Compile Include="Assets/CodeChallenge/CodeChallenge.cs" />
-     <Compile Include="Assets/NonPlayerCharacter.cs" />
+     <Compile Include="Assets/Scripts/CameraEffects.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/2DBeginner_Third-PartyNotice.txt" />
@@ -60,6 +62,7 @@
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+     <None Include="Assets/Camera Effect Shader.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
