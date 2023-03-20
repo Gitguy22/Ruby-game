@@ -27,6 +27,8 @@ public class RubyController : MonoBehaviour
     AudioSource audioSource;
 
     public AudioClip throwSound;
+
+    public int dialogCounter = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -81,9 +83,22 @@ public class RubyController : MonoBehaviour
                 if (character != null)
                 {
                     character.DisplayDialog();
+                    StartCoroutine(Delay());
                 }
             }
         }
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(5);
+        dialogCounter = 1;
+        if(dialogCounter == 1)
+        {
+            dialogCounter = 2;
+        }
+
+        
     }
     
     
