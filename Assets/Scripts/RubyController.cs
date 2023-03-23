@@ -83,6 +83,7 @@ public class RubyController : MonoBehaviour
                 if (character != null)
                 {
                     character.DisplayDialog();
+                    Debug.Log("here");
                     StartCoroutine(Delay());
                 }
             }
@@ -91,12 +92,9 @@ public class RubyController : MonoBehaviour
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(5);
-        dialogCounter = 1;
-        if(dialogCounter == 1)
-        {
-            dialogCounter = 2;
-        }
+        yield return new WaitForSeconds(16);
+        dialogCounter++;
+        
 
         
     }
