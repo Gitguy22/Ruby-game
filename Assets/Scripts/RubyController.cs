@@ -27,8 +27,11 @@ public class RubyController : MonoBehaviour
     AudioSource audioSource;
 
     public AudioClip throwSound;
+    public AudioClip hitSound;
 
     public int dialogCounter = 0;
+
+    public Transform respawnPosition;
     
     // Start is called before the first frame update
     void Start()
@@ -80,20 +83,22 @@ public class RubyController : MonoBehaviour
             if (hit.collider != null)
             {
              NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+             Dialogue d = hit.collider.GetComponent<Dialogue>();
                 if (character != null)
                 {
                     character.DisplayDialog();
                     Debug.Log("here");
                     StartCoroutine(Delay());
                 }
+                
             }
         }
     }
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(16);
-        dialogCounter++;
+        yield return new WaitForSeconds(8);
+        dialogCounter = 1;
         
 
         
@@ -115,6 +120,7 @@ public class RubyController : MonoBehaviour
         // ========== Health Changes ==========
         if (amount < 0)
         {
+             PlaySound(hitSound);
             if (isInvincible)
                 return;
             
@@ -124,6 +130,10 @@ public class RubyController : MonoBehaviour
         
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+        if(currentHealth == 0)
+        {
+            Respawn();
+        }
     }
     
     void Launch()
@@ -137,5 +147,11 @@ public class RubyController : MonoBehaviour
         animator.SetTrigger("Launch");
 
         PlaySound(throwSound);
+    }
+
+    void Respawn()
+    {
+        ChangeHealth(maxHealth);
+        transform.position = respawnPosition.position;
     }
 }

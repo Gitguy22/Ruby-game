@@ -9,7 +9,7 @@ public class CameraEffects : MonoBehaviour
 {
 
     public Material material;
-    public GameObject listener;
+    
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {

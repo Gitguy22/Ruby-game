@@ -7,6 +7,8 @@ public class MatrixController : MonoBehaviour
     public GameObject simulation;
     public GameObject invertedCamera;
     public GameObject redBerry;
+    public GameObject backgroundMusic;
+    public GameObject matrixMusic;
     
     public GameObject listener;
 
@@ -15,6 +17,8 @@ public class MatrixController : MonoBehaviour
         simulation.SetActive(true);
         invertedCamera.SetActive(true);
         listener.SetActive(false);
+        backgroundMusic.SetActive(false);
+        matrixMusic.SetActive(true);
 
         Destroy(gameObject);
         Destroy(redBerry);

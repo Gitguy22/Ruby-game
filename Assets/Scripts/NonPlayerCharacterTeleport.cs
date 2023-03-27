@@ -9,6 +9,9 @@ public class NonPlayerCharacterTeleport : MonoBehaviour
     public GameObject firstFrog;
     public GameObject secondFrog;
     public GameObject simulation;
+    public GameObject invertedCamera;
+    public GameObject barricade;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +25,13 @@ public class NonPlayerCharacterTeleport : MonoBehaviour
        {
            firstFrog.SetActive(false);
            secondFrog.SetActive(true);
+           barricade.SetActive(false);
            
        }
        if(rScript.dialogCounter == 2)
        {
            simulation.SetActive(true);
+           
        }
         
     }
