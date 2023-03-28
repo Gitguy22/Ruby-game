@@ -19,9 +19,9 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text= string.Empty;
-        redBerry.gameObject.SetActive(false);
-        blueBerry.gameObject.SetActive(false);
+        
         StartDialogue();
+
 
     }
 
@@ -29,7 +29,11 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.X) && dialogTrigger)
-        { 
+        {
+            RubyController rubyController = FindObjectOfType<RubyController>();
+
+            redBerry.gameObject.SetActive(true);
+            blueBerry.gameObject.SetActive(true);
             
             dialogBox.gameObject.SetActive(true);
             if (textComponent.text == lines[index])
@@ -39,6 +43,7 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
+                rubyController.dialogCounter = 2;
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
