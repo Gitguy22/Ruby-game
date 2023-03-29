@@ -28,11 +28,7 @@ public class NonPlayerCharacterTeleport : MonoBehaviour
            barricade.SetActive(false);
            
        }
-       if(rScript.dialogCounter == 2)
-       {
-           simulation.SetActive(true);
-           
-       }
+       
         
     }
 }

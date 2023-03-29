@@ -43,7 +43,7 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
-                rubyController.dialogCounter = 2;
+                
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
